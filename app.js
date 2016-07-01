@@ -71,7 +71,7 @@ app.post('/authenticate', function(req, res) {
         	message: 'Enjoy your token!',
         	token: token
         });
-
+//asdas
     } 
 
     /*
