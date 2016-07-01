@@ -1,0 +1,423 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Limitless - Responsive Web Application Kit by Eugene Kopyov
+    // Global stylesheets
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900', rel='stylesheet', type='text/css')
+    link(href='/assets/css/icons/icomoon/styles.css', rel='stylesheet', type='text/css')
+    link(href='/assets/css/minified/bootstrap.min.css', rel='stylesheet', type='text/css')
+    link(href='/assets/css/minified/core.min.css', rel='stylesheet', type='text/css')
+    link(href='/assets/css/minified/components.min.css', rel='stylesheet', type='text/css')
+    link(href='/assets/css/minified/colors.min.css', rel='stylesheet', type='text/css')
+    // /global stylesheets
+    // Core JS files
+    script(type='text/javascript', src='/assets/js/plugins/loaders/pace.min.js')
+    script(type='text/javascript', src='/assets/js/core/libraries/jquery.min.js')
+    script(type='text/javascript', src='/assets/js/core/libraries/bootstrap.min.js')
+    script(type='text/javascript', src='/assets/js/plugins/loaders/blockui.min.js')
+    // /core JS files
+    // Theme JS files
+    script(type='text/javascript', src='/assets/js/plugins/forms/selects/select2.min.js')
+   
+    // script(type='text/javascript', src='/assets/js/plugins/visualization/d3/d3.min.js')
+    // script(type='text/javascript', src='/assets/js/plugins/visualization/d3/d3_tooltip.js')
+    // script(type='text/javascript', src='/assets/js/plugins/forms/styling/switchery.min.js')
+    // script(type='text/javascript', src='/assets/js/plugins/forms/styling/uniform.min.js')
+    // script(type='text/javascript', src='/assets/js/plugins/forms/selects/bootstrap_multiselect.js')
+    // script(type='text/javascript', src='/assets/js/plugins/ui/moment/moment.min.js')
+    // script(type='text/javascript', src='/assets/js/plugins/pickers/daterangepicker.js')
+    script(type='text/javascript', src='/assets/js/core/app.js')
+   
+    // script(type='text/javascript', src='/assets/js/pages/form_layouts.js')
+
+    block header
+
+    // /theme JS files
+  body
+    // Main navbar
+    .navbar.navbar-inverse
+      .navbar-header
+        a.navbar-brand(href='index.html')
+          img(src='/assets/images/logo_light.png', alt='')
+        ul.nav.navbar-nav.visible-xs-block
+          li
+            a(data-toggle='collapse', data-target='#navbar-mobile')
+              i.icon-tree5
+          li
+            a.sidebar-mobile-main-toggle
+              i.icon-paragraph-justify3
+      #navbar-mobile.navbar-collapse.collapse
+        ul.nav.navbar-nav
+          li
+            a.sidebar-control.sidebar-main-toggle.hidden-xs
+              i.icon-paragraph-justify3
+          li.dropdown
+            a.dropdown-toggle(href='#', data-toggle='dropdown')
+              i.icon-git-compare
+              span.visible-xs-inline-block.position-right Git updates
+              span.badge.bg-warning-400 9
+            .dropdown-menu.dropdown-content
+              .dropdown-content-heading
+                | Git updates
+                ul.icons-list
+                  li
+                    a(href='#')
+                      i.icon-sync
+              ul.media-list.dropdown-content-body.width-350
+                li.media
+                  .media-left
+                    a.btn.border-primary.text-primary.btn-flat.btn-rounded.btn-icon.btn-sm(href='#')
+                      i.icon-git-pull-request
+                  .media-body
+                    | Drop the IE 
+                    a(href='#') specific hacks
+                    |  for temporal inputs
+                    .media-annotation 4 minutes ago
+                li.media
+                  .media-left
+                    a.btn.border-warning.text-warning.btn-flat.btn-rounded.btn-icon.btn-sm(href='#')
+                      i.icon-git-commit
+                  .media-body
+                    | Add full font overrides for popovers and tooltips
+                    .media-annotation 36 minutes ago
+                li.media
+                  .media-left
+                    a.btn.border-info.text-info.btn-flat.btn-rounded.btn-icon.btn-sm(href='#')
+                      i.icon-git-branch
+                  .media-body
+                    a(href='#') Chris Arney
+                    |  created a new 
+                    span.text-semibold Design
+                    |  branch
+                    .media-annotation 2 hours ago
+                li.media
+                  .media-left
+                    a.btn.border-success.text-success.btn-flat.btn-rounded.btn-icon.btn-sm(href='#')
+                      i.icon-git-merge
+                  .media-body
+                    a(href='#') Eugene Kopyov
+                    |  merged 
+                    span.text-semibold Master
+                    |  and 
+                    span.text-semibold Dev
+                    |  branches
+                    .media-annotation Dec 18, 18:36
+                li.media
+                  .media-left
+                    a.btn.border-primary.text-primary.btn-flat.btn-rounded.btn-icon.btn-sm(href='#')
+                      i.icon-git-pull-request
+                  .media-body
+                    | Have Carousel ignore keyboard events
+                    .media-annotation Dec 12, 05:46
+              .dropdown-content-footer
+                a(href='#', data-popup='tooltip', title='All activity')
+                  i.icon-menu.display-block
+        p.navbar-text
+          span.label.bg-success-400 Online
+        ul.nav.navbar-nav.navbar-right
+          li.dropdown.language-switch
+            a.dropdown-toggle(data-toggle='dropdown')
+              img.position-left(src='/assets/images/flags/gb.png', alt='')
+              |             English
+              span.caret
+            ul.dropdown-menu
+              li
+                a.deutsch
+                  img(src='/assets/images/flags/de.png', alt='')
+                  |  Deutsch
+              li
+                a.ukrainian
+                  img(src='/assets/images/flags/ua.png', alt='')
+                  |  Українська
+              li
+                a.english
+                  img(src='/assets/images/flags/gb.png', alt='')
+                  |  English
+              li
+                a.espana
+                  img(src='/assets/images/flags/es.png', alt='')
+                  |  España
+              li
+                a.russian
+                  img(src='/assets/images/flags/ru.png', alt='')
+                  |  Русский
+          li.dropdown
+            a.dropdown-toggle(href='#', data-toggle='dropdown')
+              i.icon-bubbles4
+              span.visible-xs-inline-block.position-right Messages
+              span.badge.bg-warning-400 2
+            .dropdown-menu.dropdown-content.width-350
+              .dropdown-content-heading
+                | Messages
+                ul.icons-list
+                  li
+                    a(href='#')
+                      i.icon-compose
+              ul.media-list.dropdown-content-body
+                li.media
+                  .media-left
+                    img.img-circle.img-sm(src='/assets/images/placeholder.jpg', alt='')
+                    span.badge.bg-danger-400.media-badge 5
+                  .media-body
+                    a.media-heading(href='#')
+                      span.text-semibold James Alexander
+                      span.media-annotation.pull-right 04:58
+                    span.text-muted who knows, maybe that would be the best thing for me...
+                li.media
+                  .media-left
+                    img.img-circle.img-sm(src='/assets/images/placeholder.jpg', alt='')
+                    span.badge.bg-danger-400.media-badge 4
+                  .media-body
+                    a.media-heading(href='#')
+                      span.text-semibold Margo Baker
+                      span.media-annotation.pull-right 12:16
+                    span.text-muted That was something he was unable to do because...
+                li.media
+                  .media-left
+                    img.img-circle.img-sm(src='/assets/images/placeholder.jpg', alt='')
+                  .media-body
+                    a.media-heading(href='#')
+                      span.text-semibold Jeremy Victorino
+                      span.media-annotation.pull-right 22:48
+                    span.text-muted But that would be extremely strained and suspicious...
+                li.media
+                  .media-left
+                    img.img-circle.img-sm(src='/assets/images/placeholder.jpg', alt='')
+                  .media-body
+                    a.media-heading(href='#')
+                      span.text-semibold Beatrix Diaz
+                      span.media-annotation.pull-right Tue
+                    span.text-muted What a strenuous career it is that I've chosen...
+                li.media
+                  .media-left
+                    img.img-circle.img-sm(src='/assets/images/placeholder.jpg', alt='')
+                  .media-body
+                    a.media-heading(href='#')
+                      span.text-semibold Richard Vango
+                      span.media-annotation.pull-right Mon
+                    span.text-muted Other travelling salesmen live a life of luxury...
+              .dropdown-content-footer
+                a(href='#', data-popup='tooltip', title='All messages')
+                  i.icon-menu.display-block
+          li.dropdown.dropdown-user
+            a.dropdown-toggle(data-toggle='dropdown')
+              img(src='/assets/images/placeholder.jpg', alt='')
+              span Victoria
+              i.caret
+            ul.dropdown-menu.dropdown-menu-right
+              li
+                a(href='#')
+                  i.icon-user-plus
+                  |  My profile
+              li
+                a(href='#')
+                  i.icon-coins
+                  |  My balance
+              li
+                a(href='#')
+                  span.badge.bg-teal-400.pull-right 58
+                  i.icon-comment-discussion
+                  |  Messages
+              li.divider
+              li
+                a(href='#')
+                  i.icon-cog5
+                  |  Account settings
+              li
+                a(href='#')
+                  i.icon-switch2
+                  |  Logout
+    // /main navbar
+    // Page header
+    .page-header
+      .breadcrumb-line.breadcrumb-line-wide
+        ul.breadcrumb
+          li
+            a(href='dashboard')
+              i.icon-home2.position-left
+              |  Home
+          li.active Dashboard
+        ul.breadcrumb-elements
+          li
+            a(href='#')
+              i.icon-comment-discussion.position-left
+              |  Support
+          li.dropdown
+            a.dropdown-toggle(href='#', data-toggle='dropdown')
+              i.icon-gear.position-left
+              |             Settings
+              span.caret
+            ul.dropdown-menu.dropdown-menu-right
+              li
+                a(href='#')
+                  i.icon-user-lock
+                  |  Account security
+              li
+                a(href='#')
+                  i.icon-statistics
+                  |  Analytics
+              li
+                a(href='#')
+                  i.icon-accessibility
+                  |  Accessibility
+              li.divider
+              li
+                a(href='#')
+                  i.icon-gear
+                  |  All settings
+      .page-header-content
+        .page-title
+          h4
+            i.icon-arrow-left52.position-left
+            span.text-semibold Home
+            |  - Dashboard 
+            small Hello, Victoria!
+        .heading-elements
+          .heading-btn-group
+            a.btn.btn-link.btn-float.has-text(href='#')
+              i.icon-bars-alt.text-primary
+              span Statistics
+            a.btn.btn-link.btn-float.has-text(href='#')
+              i.icon-calculator.text-primary
+              span Invoices
+            a.btn.btn-link.btn-float.has-text(href='#')
+              i.icon-calendar5.text-primary
+              span Schedule
+    // /page header
+    // Page container
+    .page-container
+      // Page content
+      .page-content
+        // Main sidebar
+        .sidebar.sidebar-main.sidebar-default
+          .sidebar-content
+            // Main navigation
+            .sidebar-category.sidebar-category-visible
+              .category-title.h6
+                span Main navigation
+                ul.icons-list
+                  li
+                    a(href='#', data-action='collapse')
+              .category-content.sidebar-user
+                .media
+                  a.media-left(href='#')
+                    img.img-circle.img-sm(src='/assets/images/placeholder.jpg', alt='')
+                  .media-body
+                    span.media-heading.text-semibold Victoria Baker
+                    .text-size-mini.text-muted
+                      i.icon-pin.text-size-small
+                      |   Santa Ana, CA
+                  .media-right.media-middle
+                    ul.icons-list
+                      li
+                        a(href='#')
+                          i.icon-cog3
+              .category-content.no-padding
+                ul.navigation.navigation-main.navigation-accordion
+                  // Main
+                  li.navigation-header
+                    span Main
+                    i.icon-menu(title='Main pages')
+                  li.active
+                    a(href='dashboard')
+                      i.icon-home4
+                      span Dashboard
+                  li
+                    a(href='#')
+                      i.icon-stack2
+                      span Post
+                    ul
+                      li
+                        a(href='/admin/post/new') New
+                      li
+                        a(href='/admin/post/list') List Posts
+                      li
+                        a(href='/admin/post/category') Category
+                  li
+                    a(href='#')
+                      i.icon-copy
+                      span Transaksi
+                    ul
+                      li
+                        a#layout1(href='#') Deposit
+                      li
+                        a#layout2(href='#') Withdraw
+                  li
+                    a(href='#')
+                      i.icon-email
+                      span Email
+                    ul
+                      li
+                        a#layout1(href='/admin/mail/new') New
+                      li
+                        a#layout1(href='/admin/mail/inbox') Inbox
+                      li
+                        a#layout1(href='/admin/mail/outbox') Outbox
+                      li
+                        a#layout1(href='/admin/mail/broadcast') Broadcast
+                  li
+                    a(href='#')
+                      i.icon-copy
+                      span Users
+                    ul
+                      li
+                        a#layout1(href='/admin/new') New
+                      li
+                        a#layout1(href='/admin/users') List
+                  li
+                    a(href='#')
+                      i.icon-droplet2
+                      span Settings
+                    ul
+                      li
+                        a(href='colors_primary.html') Primary palette
+                      li
+                        a(href='colors_danger.html') Danger palette
+                      li
+                        a(href='colors_success.html') Success palette
+                      li
+                        a(href='colors_warning.html') Warning palette
+                      li
+                        a(href='colors_info.html') Info palette
+                      li.navigation-divider
+                      li
+                        a(href='colors_pink.html') Pink palette
+                      li
+                        a(href='colors_violet.html') Violet palette
+                      li
+                        a(href='colors_purple.html') Purple palette
+                      li
+                        a(href='colors_indigo.html') Indigo palette
+                      li
+                        a(href='colors_blue.html') Blue palette
+                      li
+                        a(href='colors_teal.html') Teal palette
+                      li
+                        a(href='colors_green.html') Green palette
+                      li
+                        a(href='colors_orange.html') Orange palette
+                      li
+                        a(href='colors_brown.html') Brown palette
+                      li
+                        a(href='colors_grey.html') Grey palette
+                      li
+                        a(href='colors_slate.html') Slate palette
+                  // /page kits
+            // /main navigation
+        // /main sidebar
+        // Main content
+        .content-wrapper
+         block content
+        // /main content
+      // /page content
+      // Footer
+      .footer.text-muted
+        | © 2015. 
+        a(href='#') Limitless Web App Kit
+        |  by 
+        a(href='http://themeforest.net/user/Kopyov', target='_blank') Eugene Kopyov
+      // /footer
+    // /page container

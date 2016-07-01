@@ -1,0 +1,58 @@
+extends ../master-layout.pug
+
+block header
+ script(type='text/javascript', src='/assets/js/plugins/tables/datatables/datatables.min.js')
+ script(type='text/javascript', src='/assets/js/pages/datatables_basic.js')
+
+block content
+ .panel.panel-flat
+  .panel-heading
+    h5.panel-title Basic datatable
+    .heading-elements
+      ul.icons-list
+        li
+          a(data-action='collapse')
+        li
+          a(data-action='reload')
+        li
+          a(data-action='close')
+  .panel-body
+    | The 
+    code DataTables
+    |  is a highly flexible tool, based upon the foundations of progressive enhancement, and will add advanced interaction controls to any HTML table. DataTables has most features enabled by default, so all you need to do to use it with your own tables is to call the construction function. Searching, ordering, paging etc goodness will be immediately added to the table, as shown in this example. 
+    strong Datatables support all available table styling.
+  table.table.datatable-basic
+    thead
+      tr
+        th Title
+        th Content
+        th Published
+        th.text-center Actions
+    tbody
+	    each item in data
+	      tr
+          td #{item.title}
+          td #{item.article}
+          td #{item.date_published}
+          td.text-center
+            ul.icons-list
+              li.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                  i.icon-menu9
+                ul.dropdown-menu.dropdown-menu-right
+                  li
+                    a(href='#')
+                      i.icon-file-pdf
+                      |  Export to .pdf
+                  li
+                    a(href='#')
+                      i.icon-file-excel
+                      |  Export to .csv
+                  li
+                    a(href='#')
+                      i.icon-file-word
+                      |  Export to .doc
+
+
+
+        

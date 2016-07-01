@@ -1,0 +1,1230 @@
+doctype html
+//if IE 9 
+  html.ie9(lang='en')
+// [if (gt IE 9)|!(IE)] <!
+html(lang='en')
+  // <![endif]
+  head
+    title Flatastic - Home
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    // meta info
+    meta(name='author', content='')
+    meta(name='keywords', content='')
+    meta(name='description', content='')
+    link(rel='icon', type='image/ico', href='/images/fav.ico')
+    // stylesheet include
+    link(rel='stylesheet', type='text/css', media='all', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', media='all', href='/css/camera.css')
+    link(rel='stylesheet', type='text/css', media='all', href='/css/owl.carousel.css')
+    link(rel='stylesheet', type='text/css', media='all', href='/css/owl.transitions.css')
+    link(rel='stylesheet', type='text/css', media='all', href='/css/jquery.custom-scrollbar.css')
+    link(rel='stylesheet', type='text/css', media='all', href='/css/theme-style.css')
+    // font include
+    link(href='css/font-awesome.min.css', rel='stylesheet')
+  body
+    // boxed layout
+    .boxed_layout.relative.w_xs_auto
+      //if (lt IE 9) | IE 9
+        div(style='background:#fff;padding:8px 0 10px;')
+          .container(style='width:1170px;')
+            .row.wrapper
+              .clearfix(style='padding:9px 0 0;float:left;width:83%;')
+                i.fa.fa-exclamation-triangle.scheme_color.f_left.m_right_10(style='font-size:25px;color:#e74c3c;')
+                b(style='color:#e74c3c;') Attention! This page may not display correctly.
+                b
+                  | You are using an outdated version of Internet Explorer. For a faster, safer browsing experience.
+              .t_align_r(style='float:left;width:16%;')
+                a.button_type_4.r_corners.bg_scheme_color.color_light.d_inline_b.t_align_c(href='http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode', target='_blank', style='margin-bottom:2px;') Update Now!
+      // markup header
+      header(role='banner')
+        // header top part
+        section.h_top_part
+          .container
+            .row.clearfix
+              .col-lg-4.col-md-4.col-sm-5.t_xs_align_c
+                p.f_size_small
+                  | Welcome visitor can you	
+                  a(href='#', data-popup='#login_popup') Log In
+                  |  or 
+                  a(href='#') Create an Account
+              .col-lg-4.col-md-4.col-sm-2.t_align_c.t_xs_align_c
+                p.f_size_small
+                  | Call us toll free: 
+                  b.color_dark (123) 456-7890
+              nav.col-lg-4.col-md-4.col-sm-5.t_align_r.t_xs_align_c
+                ul.d_inline_b.horizontal_list.clearfix.f_size_small.users_nav
+                  li
+                    a.default_t_color(href='#') My Account
+                  li
+                    a.default_t_color(href='#') Orders List
+                  li
+                    a.default_t_color(href='#') Wishlist
+                  li
+                    a.default_t_color(href='#') Checkout
+        // header bottom part
+        section.h_bot_part.container
+          .clearfix.row
+            .col-lg-6.col-md-6.col-sm-4.t_xs_align_c
+              a.logo.m_xs_bottom_15.d_xs_inline_b(href='dashboard')
+                img(src='images/logo.png', alt='')
+            .col-lg-6.col-md-6.col-sm-8.t_align_r.t_xs_align_c
+              ul.d_inline_b.horizontal_list.clearfix.t_align_l.site_settings
+                // like
+                li
+                  a.button_type_1.color_dark.d_block.bg_light_color_1.r_corners.tr_delay_hover.box_s_none(role='button', href='#')
+                    i.fa.fa-heart-o.f_size_ex_large
+                    span.count.circle.t_align_c 12
+                li.m_left_5
+                  a.button_type_1.color_dark.d_block.bg_light_color_1.r_corners.tr_delay_hover.box_s_none(role='button', href='#')
+                    i.fa.fa-files-o.f_size_ex_large
+                    span.count.circle.t_align_c 3
+                // language settings
+                li.m_left_5.relative.container3d
+                  a#lang_button.button_type_2.color_dark.d_block.bg_light_color_1.r_corners.tr_delay_hover.box_s_none(role='button', href='#')
+                    img.d_inline_middle.m_right_10.m_mxs_right_0(src='images/flag_en.jpg', alt='')
+                    span.d_mxs_none English
+                  ul.dropdown_list.top_arrow.color_light
+                    li
+                      a.tr_delay_hover.color_light(href='#')
+                        img.d_inline_middle(src='images/flag_en.jpg', alt='')
+                        | English
+                    li
+                      a.tr_delay_hover.color_light(href='#')
+                        img.d_inline_middle(src='images/flag_fr.jpg', alt='')
+                        | French
+                    li
+                      a.tr_delay_hover.color_light(href='#')
+                        img.d_inline_middle(src='images/flag_g.jpg', alt='')
+                        | German
+                    li
+                      a.tr_delay_hover.color_light(href='#')
+                        img.d_inline_middle(src='images/flag_i.jpg', alt='')
+                        | Italian
+                    li
+                      a.tr_delay_hover.color_light(href='#')
+                        img.d_inline_middle(src='images/flag_s.jpg', alt='')
+                        | Spanish
+                // currency settings
+                li.m_left_5.relative.container3d
+                  a#currency_button.button_type_2.color_dark.d_block.bg_light_color_1.r_corners.tr_delay_hover.box_s_none(role='button', href='#')
+                    span.scheme_color $
+                    span.d_mxs_none US Dollar
+                  ul.dropdown_list.top_arrow.color_light
+                    li
+                      a.tr_delay_hover.color_light(href='#')
+                        span.scheme_color $
+                        |  US Dollar
+                    li
+                      a.tr_delay_hover.color_light(href='#')
+                        span.scheme_color €
+                        |  Euro
+                    li
+                      a.tr_delay_hover.color_light(href='#')
+                        span.scheme_color £
+                        |  Pound
+                // shopping cart
+                li#shopping_button.m_left_5.relative.container3d
+                  a.button_type_3.color_light.bg_scheme_color.d_block.r_corners.tr_delay_hover.box_s_none(role='button', href='#')
+                    span.d_inline_middle.shop_icon.m_mxs_right_0
+                      i.fa.fa-shopping-cart
+                      span.count.tr_delay_hover.type_2.circle.t_align_c 3
+                    b.d_mxs_none $355
+                  .shopping_cart.top_arrow.tr_all_hover.r_corners
+                    .f_size_medium.sc_header Recently added item(s)
+                    ul.products_list
+                      li
+                        .clearfix
+                          // product image
+                          img.f_left.m_right_10(src='images/shopping_c_img_1.jpg', alt='')
+                          // product description
+                          .f_left.product_description
+                            a.color_dark.m_bottom_5.d_block(href='#') Cursus eleifend elit aenean auctor wisi et urna
+                            span.f_size_medium Product Code PS34
+                          // product price
+                          .f_left.f_size_medium
+                            .clearfix
+                              | 1 x 
+                              b.color_dark $99.00
+                            button.close_product.color_dark.tr_hover
+                              i.fa.fa-times
+                      li
+                        .clearfix
+                          // product image
+                          img.f_left.m_right_10(src='images/shopping_c_img_2.jpg', alt='')
+                          // product description
+                          .f_left.product_description
+                            a.color_dark.m_bottom_5.d_block(href='#') Cursus eleifend elit aenean auctor wisi et urna
+                            span.f_size_medium Product Code PS34
+                          // product price
+                          .f_left.f_size_medium
+                            .clearfix
+                              | 1 x 
+                              b.color_dark $99.00
+                            button.close_product.color_dark.tr_hover
+                              i.fa.fa-times
+                      li
+                        .clearfix
+                          // product image
+                          img.f_left.m_right_10(src='images/shopping_c_img_3.jpg', alt='')
+                          // product description
+                          .f_left.product_description
+                            a.color_dark.m_bottom_5.d_block(href='#') Cursus eleifend elit aenean auctor wisi et urna
+                            span.f_size_medium Product Code PS34
+                          // product price
+                          .f_left.f_size_medium
+                            .clearfix
+                              | 1 x 
+                              b.color_dark $99.00
+                            button.close_product.color_dark.tr_hover
+                              i.fa.fa-times
+                    // total price
+                    ul.total_price.bg_light_color_1.t_align_r.color_dark
+                      li.m_bottom_10
+                        | Tax: 
+                        span.f_size_large.sc_price.t_align_l.d_inline_b.m_left_15 $0.00
+                      li.m_bottom_10
+                        | Discount: 
+                        span.f_size_large.sc_price.t_align_l.d_inline_b.m_left_15 $37.00
+                      li
+                        | Total: 
+                        b.f_size_large.bold.scheme_color.sc_price.t_align_l.d_inline_b.m_left_15 $999.00
+                    .sc_footer.t_align_c
+                      a.button_type_4.d_inline_middle.bg_light_color_2.r_corners.color_dark.t_align_c.tr_all_hover.m_mxs_bottom_5(href='#', role='button') View Cart
+                      a.button_type_4.bg_scheme_color.d_inline_middle.r_corners.tr_all_hover.color_light(href='#', role='button') Checkout
+        // main menu container
+        section.menu_wrap.relative
+          .container.clearfix
+            // button for responsive menu
+            button#menu_button.r_corners.centered_db.d_none.tr_all_hover.d_xs_block.m_bottom_10
+              span.centered_db.r_corners
+              span.centered_db.r_corners
+              span.centered_db.r_corners
+            // main menu
+            nav.f_left.f_xs_none.d_xs_none(role='navigation')
+              ul.horizontal_list.main_menu.clearfix
+                li.current.relative.f_xs_none.m_xs_bottom_5
+                  a.tr_delay_hover.color_light.tt_uppercase(href='dashboard')
+                    b Home
+                  // sub menu
+                  .sub_menu_wrap.top_arrow.d_xs_none.type_2.tr_all_hover.clearfix.r_corners
+                    ul.sub_menu
+                      li
+                        a.color_dark.tr_delay_hover(href='dashboard') Home Variant 1
+                      li
+                        a.color_dark.tr_delay_hover(href='index_layout_2.html') Home Variant 2
+                      li
+                        a.color_dark.tr_delay_hover(href='index_layout_wide.html') Home Variant 3
+                      li
+                        a.color_dark.tr_delay_hover(href='index_corporate.html') Home Variant 4
+                      li
+                        a.color_dark.tr_delay_hover(href='http://www.weidea.net') More
+                li.relative.f_xs_none.m_xs_bottom_5
+                  a.tr_delay_hover.color_light.tt_uppercase(href='index_layout_wide.html')
+                    b Sliders
+                  // sub menu
+                  .sub_menu_wrap.top_arrow.d_xs_none.type_2.tr_all_hover.clearfix.r_corners
+                    ul.sub_menu
+                      li
+                        a.color_dark.tr_delay_hover(href='index_layout_wide.html') Revolution Slider
+                      li
+                        a.color_dark.tr_delay_hover(href='index.html') Camera Slider
+                      li
+                        a.color_dark.tr_delay_hover(href='index_layout_2.html') Flex Slider
+                li.relative.f_xs_none.m_xs_bottom_5
+                  a.tr_delay_hover.color_light.tt_uppercase(href='category_grid.html')
+                    b Shop
+                  // sub menu
+                  .sub_menu_wrap.top_arrow.d_xs_none.tr_all_hover.clearfix.r_corners.w_xs_auto
+                    .f_left.f_xs_none
+                      b.color_dark.m_left_20.m_bottom_5.m_top_5.d_inline_b Dresses
+                      ul.sub_menu.first
+                        li
+                          a.color_dark.tr_delay_hover(href='#') Evening Dresses
+                        li
+                          a.color_dark.tr_delay_hover(href='#') Casual Dresses
+                        li
+                          a.color_dark.tr_delay_hover(href='#') Party Dresses
+                        li
+                          a.color_dark.tr_delay_hover(href='#') Maxi Dresses
+                        li
+                          a.color_dark.tr_delay_hover(href='#') Midi Dresses
+                        li
+                          a.color_dark.tr_delay_hover(href='#') Strapless Dresses
+                        li
+                          a.color_dark.tr_delay_hover(href='#') Day Dresses
+                    .f_left.m_left_10.m_xs_left_0.f_xs_none
+                      b.color_dark.m_left_20.m_bottom_5.m_top_5.d_inline_b Accessories
+                      ul.sub_menu
+                        li
+                          a.color_dark.tr_delay_hover(href='#') Bags and Purces
+                        li
+                          a.color_dark.tr_delay_hover(href='#') Belts
+                        li
+                          a.color_dark.tr_delay_hover(href='#') Scarves
+                        li
+                          a.color_dark.tr_delay_hover(href='#') Gloves
+                        li
+                          a.color_dark.tr_delay_hover(href='#') Jewellery
+                        li
+                          a.color_dark.tr_delay_hover(href='#') Sunglasses
+                        li
+                          a.color_dark.tr_delay_hover(href='#') Hair Accessories
+                    .f_left.m_left_10.m_xs_left_0.f_xs_none
+                      b.color_dark.m_left_20.m_bottom_5.m_top_5.d_inline_b Tops
+                      ul.sub_menu
+                        li
+                          a.color_dark.tr_delay_hover(href='#') Evening Tops
+                        li
+                          a.color_dark.tr_delay_hover(href='#') Long Sleeved
+                        li
+                          a.color_dark.tr_delay_hover(href='#') Short Sleeved
+                        li
+                          a.color_dark.tr_delay_hover(href='#') Sleeveless
+                        li
+                          a.color_dark.tr_delay_hover(href='#') Tanks
+                        li
+                          a.color_dark.tr_delay_hover(href='#') Tunics
+                    img.d_sm_none.f_right.m_bottom_10(src='images/woman_image_1.jpg', alt='')
+                li.relative.f_xs_none.m_xs_bottom_5
+                  a.tr_delay_hover.color_light.tt_uppercase(href='#')
+                    b Portfolio
+                  // sub menu
+                  .sub_menu_wrap.top_arrow.d_xs_none.type_2.tr_all_hover.clearfix.r_corners
+                    ul.sub_menu
+                      li
+                        a.color_dark.tr_delay_hover(href='portfolio_two_columns.html') Portfolio 2 Columns
+                      li
+                        a.color_dark.tr_delay_hover(href='portfolio_three_columns.html') Portfolio 3 Columns
+                      li
+                        a.color_dark.tr_delay_hover(href='portfolio_four_columns.html') Portfolio 4 Columns
+                      li
+                        a.color_dark.tr_delay_hover(href='portfolio_masonry.html') Masonry Portfolio
+                      li
+                        a.color_dark.tr_delay_hover(href='portfolio_single_1.html') Single Portfolio Post v1
+                      li
+                        a.color_dark.tr_delay_hover(href='portfolio_single_2.html') Single Portfolio Post v2
+                li.relative.f_xs_none.m_xs_bottom_5
+                  a.tr_delay_hover.color_light.tt_uppercase(href='category_grid.html')
+                    b Pages
+                  // sub menu
+                  .sub_menu_wrap.top_arrow.d_xs_none.type_2.tr_all_hover.clearfix.r_corners
+                    ul.sub_menu
+                      li
+                        a.color_dark.tr_delay_hover(href='category_grid.html') Grid View Category Page
+                      li
+                        a.color_dark.tr_delay_hover(href='category_list.html') List View Category Page
+                      li
+                        a.color_dark.tr_delay_hover(href='category_no_products.html') Category Page Without Products
+                      li
+                        a.color_dark.tr_delay_hover(href='product_page_sidebar.html') Product Page With Sidebar
+                      li
+                        a.color_dark.tr_delay_hover(href='full_width_product_page.html') Full Width Product Page
+                      li
+                        a.color_dark.tr_delay_hover(href='wishlist.html') Wishlist
+                      li
+                        a.color_dark.tr_delay_hover(href='compare_products.html') Compare Products
+                      li
+                        a.color_dark.tr_delay_hover(href='checkout.html') Checkout
+                      li
+                        a.color_dark.tr_delay_hover(href='manufacturers.html') Manufacturers
+                      li
+                        a.color_dark.tr_delay_hover(href='manufacturer_details.html') Manufacturer Page
+                      li
+                        a.color_dark.tr_delay_hover(href='orders_list.html') Orders List
+                      li
+                        a.color_dark.tr_delay_hover(href='order_details.html') Order Details
+                li.relative.f_xs_none.m_xs_bottom_5
+                  a.tr_delay_hover.color_light.tt_uppercase(href='blog.html')
+                    b Blog
+                  // sub menu
+                  .sub_menu_wrap.top_arrow.d_xs_none.type_2.tr_all_hover.clearfix.r_corners
+                    ul.sub_menu
+                      li
+                        a.color_dark.tr_delay_hover(href='blog.html') Blog page
+                      li
+                        a.color_dark.tr_delay_hover(href='blog_post.html') Single Blog Post page
+                li.relative.f_xs_none.m_xs_bottom_5
+                  a.tr_delay_hover.color_light.tt_uppercase(href='features_shortcodes.html')
+                    b Features
+                  // sub menu
+                  .sub_menu_wrap.top_arrow.d_xs_none.type_2.tr_all_hover.clearfix.r_corners
+                    ul.sub_menu
+                      li
+                        a.color_dark.tr_delay_hover(href='features_shortcodes.html') Shortcodes
+                      li
+                        a.color_dark.tr_delay_hover(href='features_typography.html') Typography
+                li.relative.f_xs_none.m_xs_bottom_5
+                  a.tr_delay_hover.color_light.tt_uppercase(href='contact.html')
+                    b Contact
+            button.f_right.search_button.tr_all_hover.f_xs_none.d_xs_none
+              i.fa.fa-search
+          // search form
+          .searchform_wrap.tf_xs_none.tr_all_hover
+            .container.vc_child.h_inherit.relative
+              form.d_inline_middle.full_width(role='search')
+                input.f_size_large(type='text', name='search', placeholder='Type text and hit enter')
+              button.close_search_form.tr_all_hover.d_xs_none.color_dark
+                i.fa.fa-times
+      // slider
+      .camera_wrap.m_bottom_0
+        div(data-src='images/slide_02.jpg', data-custom-thumb='images/slide_02.jpg')
+          .camera_caption_1.fadeFromTop.t_align_c.d_xs_none
+            .f_size_large.color_light.tt_uppercase.slider_title_3.m_bottom_5 Meet New Theme
+            hr.slider_divider.d_inline_b.m_bottom_5
+            .color_light.slider_title.tt_uppercase.t_align_c.m_bottom_45.m_sm_bottom_20
+              b
+                | Attractive & Elegant
+                br
+                | HTML Theme
+            .color_light.slider_title_2.m_bottom_45
+              | $
+              b 15.00
+            a.tr_all_hover.button_type_4.bg_scheme_color.color_light.r_corners.tt_uppercase(href='#', role='button') Buy Now
+        div(data-src='images/slide_01.jpg', data-custom-thumb='images/slide_01.jpg')
+          .camera_caption_2.fadeIn.t_align_c.d_xs_none
+            .f_size_large.tt_uppercase.slider_title_3.scheme_color New arrivals
+            hr.slider_divider.type_2.m_bottom_5.d_inline_b
+            .color_light.slider_title.tt_uppercase.t_align_c.m_bottom_65.m_sm_bottom_20
+              b
+                span.scheme_color Spring/Summer 2014
+                br
+                span.color_dark Ready-To-Wear
+            a.d_sm_inline_b.button_type_4.bg_scheme_color.color_light.r_corners.tt_uppercase.tr_all_hover(href='#', role='button') View Collection
+        div(data-src='images/slide_03.jpg', data-custom-thumb='images/slide_03.jpg')
+          .camera_caption_3.fadeFromTop.t_align_c.d_xs_none
+            img.m_bottom_5(src='images/slider_layer_img.png', alt='')
+            .color_light.slider_title.tt_uppercase.t_align_c.m_bottom_60.m_sm_bottom_20
+              b.color_dark up to 70% off
+            a.d_sm_inline_b.button_type_4.bg_scheme_color.color_light.r_corners.tt_uppercase.tr_all_hover(href='#', role='button') Shop Now
+      // content
+      .page_content_offset
+        .container
+          h2.tt_uppercase.m_bottom_20.color_dark.heading1.animate_ftr All Products - shared on weidea.net
+          // filter navigation of products
+          ul.horizontal_list.clearfix.tt_uppercase.isotope_menu.f_size_ex_large
+            li.active.m_right_5.m_bottom_10.m_xs_bottom_5.animate_ftr
+              button.button_type_2.bg_light_color_1.r_corners.tr_delay_hover.tt_uppercase.box_s_none(data-filter='*') All
+            li.m_right_5.m_bottom_10.m_xs_bottom_5.animate_ftr
+              button.button_type_2.bg_light_color_1.r_corners.tr_delay_hover.tt_uppercase.box_s_none(data-filter='.featured') Featured
+            li.m_right_5.m_bottom_10.m_xs_bottom_5.animate_ftr
+              button.button_type_2.bg_light_color_1.r_corners.tr_delay_hover.tt_uppercase.box_s_none(data-filter='.new') New
+            li.m_right_5.m_bottom_10.m_xs_bottom_5.animate_ftr
+              button.button_type_2.bg_light_color_1.r_corners.tr_delay_hover.tt_uppercase.box_s_none(data-filter='.specials') Specials
+            li.m_right_5.m_bottom_10.m_xs_bottom_5.animate_ftr
+              button.button_type_2.bg_light_color_1.r_corners.tr_delay_hover.tt_uppercase.box_s_none(data-filter='.hit') Hit
+            li.m_right_5.m_bottom_10.m_xs_bottom_5.animate_ftr
+              button.button_type_2.bg_light_color_1.r_corners.tr_delay_hover.tt_uppercase.box_s_none(data-filter='.random') Random
+            li.m_right_5.m_bottom_10.m_xs_bottom_5.animate_ftr
+              button.button_type_2.bg_light_color_1.r_corners.tr_delay_hover.tt_uppercase.box_s_none(data-filter='.rated') Rated
+          // products
+          section.products_container.clearfix.m_bottom_25.m_sm_bottom_15
+            // product item
+            .product_item
+              figure.r_corners.photoframe.shadow.relative.hit.animate_ftb.long
+                // product preview
+                a.d_block.relative.pp_wrap(href='#')
+                  // hot product
+                  span.hot_stripe
+                    img(src='images/hot_product.png', alt='')
+                  img.tr_all_hover(src='images/product_img_1.jpg', alt='')
+                  span.button_type_5.box_s_none.color_light.r_corners.tr_all_hover.d_xs_none(data-popup='#quick_view_product') Quick View
+                // description and price of product
+                figcaption
+                  h5.m_bottom_10
+                    a.color_dark(href='#') Eget elementum vel
+                  .clearfix
+                    p.scheme_color.f_left.f_size_large.m_bottom_15 $102.00
+                    // rating
+                    ul.horizontal_list.f_right.clearfix.rating_list.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                  button.button_type_4.bg_scheme_color.r_corners.tr_all_hover.color_light.mw_0 Add to Cart
+            // product item
+            .product_item.featured
+              figure.r_corners.photoframe.shadow.relative.animate_ftb.long
+                // product preview
+                a.d_block.relative.wrapper.pp_wrap(href='#')
+                  img.tr_all_hover(src='images/product_img_2.jpg', alt='')
+                  span.box_s_none.button_type_5.color_light.r_corners.tr_all_hover.d_xs_none(data-popup='#quick_view_product') Quick View
+                // description and price of product
+                figcaption
+                  h5.m_bottom_10
+                    a.color_dark(href='#') Ut tellus dolor dapibus
+                  .clearfix.m_bottom_15
+                    p.scheme_color.f_size_large.f_left $57.00
+                    // rating
+                    ul.horizontal_list.f_right.clearfix.rating_list.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                  .clearfix
+                    button.button_type_4.bg_scheme_color.r_corners.tr_all_hover.color_light.f_left.mw_0 Add to Cart
+                    button.button_type_4.bg_light_color_2.tr_all_hover.f_right.r_corners.color_dark.mw_0.m_left_5.p_hr_0
+                      i.fa.fa-files-o
+                    button.button_type_4.bg_light_color_2.tr_all_hover.f_right.r_corners.color_dark.mw_0.p_hr_0
+                      i.fa.fa-heart-o
+            // product item
+            .product_item.new
+              figure.r_corners.photoframe.shadow.relative.animate_ftb.long
+                // product preview
+                a.d_block.relative.wrapper.pp_wrap(href='#')
+                  img.tr_all_hover(src='images/product_img_3.jpg', alt='')
+                  span.box_s_none.button_type_5.color_light.r_corners.tr_all_hover.d_xs_none(data-popup='#quick_view_product') Quick View
+                // description and price of product
+                figcaption
+                  h5.m_bottom_10
+                    a.color_dark(href='#') Cursus eleifend elit aenean aucto.
+                  .clearfix
+                    p.scheme_color.f_left.f_size_large.m_bottom_15 $99.00
+                    // rating
+                    ul.horizontal_list.f_right.clearfix.rating_list.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                  button.button_type_4.bg_scheme_color.r_corners.tr_all_hover.color_light.mw_0 Add to Cart
+            // product item
+            .product_item.specials
+              figure.r_corners.photoframe.shadow.relative.animate_ftb.long
+                // product preview
+                a.d_block.relative.pp_wrap(href='#')
+                  // sale product
+                  span.hot_stripe
+                    img(src='images/sale_product.png', alt='')
+                  img.tr_all_hover(src='images/product_img_4.jpg', alt='')
+                  span.box_s_none.button_type_5.color_light.r_corners.tr_all_hover.d_xs_none(data-popup='#quick_view_product') Quick View
+                // description and price of product
+                figcaption
+                  h5.m_bottom_10
+                    a.color_dark(href='#') Aliquam erat volutpat
+                  .clearfix
+                    p.scheme_color.f_left.f_size_large.m_bottom_15
+                      s $79.00
+                      |  $36.00
+                    // rating
+                    ul.horizontal_list.f_right.clearfix.rating_list.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                  button.button_type_4.bg_scheme_color.r_corners.tr_all_hover.color_light.mw_0 Add to Cart
+            // product item
+            .product_item.hit
+              figure.r_corners.photoframe.shadow.relative.animate_ftb.long
+                // product preview
+                a.d_block.relative.pp_wrap(href='#')
+                  // hot product
+                  span.hot_stripe.type_2
+                    img(src='images/hot_product_type_2.png', alt='')
+                  img.tr_all_hover(src='images/product_img_5.jpg', alt='')
+                  span.box_s_none.button_type_5.color_light.r_corners.tr_all_hover.d_xs_none(data-popup='#quick_view_product') Quick View
+                // description and price of product
+                figcaption
+                  h5.m_bottom_10
+                    a.color_dark(href='#') Eget elementum vel
+                  .clearfix
+                    p.scheme_color.f_left.f_size_large.m_bottom_15 $102.00
+                    // rating
+                    ul.horizontal_list.f_right.clearfix.rating_list.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                  button.button_type_4.bg_scheme_color.r_corners.tr_all_hover.color_light.mw_0 Add to Cart
+            // product item
+            .product_item.featured
+              figure.r_corners.photoframe.shadow.relative.animate_ftb.long
+                // product preview
+                a.d_block.relative.wrapper.pp_wrap(href='#')
+                  img.tr_all_hover(src='images/product_img_6.jpg', alt='')
+                  span.box_s_none.button_type_5.color_light.r_corners.tr_all_hover.d_xs_none(data-popup='#quick_view_product') Quick View
+                  span.clearfix.p_buttons.d_block.tr_all_hover
+                    span.box_s_none.button_type_5.tr_delay_hover.f_left.r_corners.color_light.p_hr_0
+                      i.fa.fa-heart-o
+                    span.box_s_none.button_type_5.tr_delay_hover.f_left.r_corners.color_light.m_left_5.p_hr_0
+                      i.fa.fa-files-o
+                // description and price of product
+                figcaption
+                  h5.m_bottom_10
+                    a.color_dark(href='#') Ut tellus dolor dapibus
+                  .clearfix.m_bottom_15
+                    p.scheme_color.f_size_large.f_left $57.00
+                    // rating
+                    ul.horizontal_list.f_right.clearfix.rating_list.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                  button.button_type_4.bg_scheme_color.r_corners.tr_all_hover.color_light.mw_0 Add to Cart
+            // product item
+            .product_item.specials
+              figure.r_corners.photoframe.shadow.relative.animate_ftb.long
+                // product preview
+                a.d_block.relative.wrapper.pp_wrap(href='#')
+                  img.tr_all_hover(src='images/product_img_7.jpg', alt='')
+                  span.box_s_none.button_type_5.color_light.r_corners.tr_all_hover.d_xs_none(data-popup='#quick_view_product') Quick View
+                // description and price of product
+                figcaption
+                  h5.m_bottom_10
+                    a.color_dark(href='#') Cursus eleifend elit aenean aucto.
+                  .clearfix
+                    p.scheme_color.f_left.f_size_large.m_bottom_15 $99.00
+                    // rating
+                    ul.horizontal_list.f_right.clearfix.rating_list.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                  button.button_type_4.bg_scheme_color.r_corners.tr_all_hover.color_light.mw_0 Add to Cart
+            // product item
+            .product_item.rated
+              figure.r_corners.photoframe.shadow.relative.animate_ftb.long
+                // product preview
+                a.d_block.relative.pp_wrap(href='#')
+                  // sale product
+                  span.hot_stripe.type_2
+                    img(src='images/sale_product_type_2.png', alt='')
+                  img.tr_all_hover(src='images/product_img_8.jpg', alt='')
+                  span.box_s_none.button_type_5.color_light.r_corners.tr_all_hover.d_xs_none(data-popup='#quick_view_product') Quick View
+                // description and price of product
+                figcaption
+                  h5.m_bottom_10
+                    a.color_dark(href='#') Aliquam erat volutpat
+                  .clearfix
+                    p.scheme_color.f_left.f_size_large.m_bottom_15
+                      s $79.00
+                      |  $36.00
+                    // rating
+                    ul.horizontal_list.f_right.clearfix.rating_list.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li.active
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                      li
+                        i.fa.fa-star-o.empty.tr_all_hover
+                        i.fa.fa-star.active.tr_all_hover
+                  button.button_type_4.bg_scheme_color.r_corners.tr_all_hover.color_light.mw_0 Add to Cart
+          // banners
+          section.row.clearfix.m_bottom_45.m_sm_bottom_35
+            .col-lg-6.col-md-6.col-sm-6.animate_half_tc
+              a.d_block.banner.wrapper.r_corners.relative.m_xs_bottom_30(href='#')
+                img(src='images/banner_img_1.png', alt='')
+                span.banner_caption.d_block.vc_child.t_align_c.w_sm_auto
+                  span.d_inline_middle
+                    span.d_block.color_dark.tt_uppercase.m_bottom_5.let_s New Collection!
+                    span.d_block.divider_type_2.centered_db.m_bottom_5
+                    span.d_block.color_light.tt_uppercase.m_bottom_25.m_xs_bottom_10.banner_title
+                      b Colored Fashion
+                    span.button_type_6.bg_scheme_color.tt_uppercase.r_corners.color_light.d_inline_b.tr_all_hover.box_s_none.f_size_ex_large Shop Now!
+            .col-lg-6.col-md-6.col-sm-6.animate_half_tc
+              a.d_block.banner.wrapper.r_corners.type_2.relative(href='#')
+                img(src='images/banner_img_2.png', alt='')
+                span.banner_caption.d_block.vc_child.t_align_c.w_sm_auto
+                  span.d_inline_middle
+                    span.d_block.scheme_color.banner_title.type_2.m_bottom_5.m_mxs_bottom_5
+                      b -50%
+                    span.d_block.divider_type_2.centered_db.m_bottom_5.d_sm_none
+                    span.d_block.color_light.tt_uppercase.m_bottom_15.banner_title_3.m_md_bottom_5.d_mxs_none
+                      | On All
+                      br
+                      b Sunglasses
+                    span.button_type_6.bg_dark_color.tt_uppercase.r_corners.color_light.d_inline_b.tr_all_hover.box_s_none.f_size_ex_large Shop Now!
+          // product brands
+          .clearfix.m_bottom_25.m_sm_bottom_20
+            h2.tt_uppercase.color_dark.f_left.heading2.animate_fade.f_mxs_none.m_mxs_bottom_15 Product Brands
+            .f_right.clearfix.nav_buttons_wrap.animate_fade.f_mxs_none
+              button.button_type_7.bg_cs_hover.box_s_none.f_size_ex_large.t_align_c.bg_light_color_1.f_left.tr_delay_hover.r_corners.pb_prev
+                i.fa.fa-angle-left
+              button.button_type_7.bg_cs_hover.box_s_none.f_size_ex_large.t_align_c.bg_light_color_1.f_left.m_left_5.tr_delay_hover.r_corners.pb_next
+                i.fa.fa-angle-right
+          // product brands carousel
+          .product_brands.m_bottom_45.m_sm_bottom_35
+            a.d_block.t_align_c.animate_fade(href='#')
+              img(src='images/brand_logo.jpg', alt='')
+            a.d_block.t_align_c.animate_fade(href='#')
+              img(src='images/brand_logo.jpg', alt='')
+            a.d_block.t_align_c.animate_fade(href='#')
+              img(src='images/brand_logo.jpg', alt='')
+            a.d_block.t_align_c.animate_fade(href='#')
+              img(src='images/brand_logo.jpg', alt='')
+            a.d_block.t_align_c.animate_fade(href='#')
+              img(src='images/brand_logo.jpg', alt='')
+            a.d_block.t_align_c.animate_fade(href='#')
+              img(src='images/brand_logo.jpg', alt='')
+            a.d_block.t_align_c.animate_fade(href='#')
+              img(src='images/brand_logo.jpg', alt='')
+            a.d_block.t_align_c.animate_fade(href='#')
+              img(src='images/brand_logo.jpg', alt='')
+            a.d_block.t_align_c.animate_fade(href='#')
+              img(src='images/brand_logo.jpg', alt='')
+            a.d_block.t_align_c.animate_fade(href='#')
+              img(src='images/brand_logo.jpg', alt='')
+            a.d_block.t_align_c.animate_fade(href='#')
+              img(src='images/brand_logo.jpg', alt='')
+            a.d_block.t_align_c.animate_fade(href='#')
+              img(src='images/brand_logo.jpg', alt='')
+          // blog
+          .row.clearfix.m_bottom_45.m_sm_bottom_35
+            .col-lg-6.col-md-6.col-sm-12.m_sm_bottom_35.blog_animate.animate_ftr
+              .clearfix.m_bottom_25.m_sm_bottom_20
+                h2.tt_uppercase.color_dark.f_left From The Blog
+                .f_right.clearfix.nav_buttons_wrap
+                  button.button_type_7.bg_cs_hover.box_s_none.f_size_ex_large.bg_light_color_1.f_left.tr_delay_hover.r_corners.blog_prev
+                    i.fa.fa-angle-left
+                  button.button_type_7.bg_cs_hover.box_s_none.f_size_ex_large.bg_light_color_1.f_left.m_left_5.tr_delay_hover.r_corners.blog_next
+                    i.fa.fa-angle-right
+              // blog carousel
+              .blog_carousel
+                .clearfix
+                  // image
+                  a.d_block.photoframe.relative.shadow.wrapper.r_corners.f_left.m_right_20.animate_ftt.f_mxs_none.m_mxs_bottom_10(href='#')
+                    img.tr_all_long_hover(src='images/blog_img_1.jpg', alt='')
+                  // post content
+                  .mini_post_content
+                    h4.m_bottom_5.animate_ftr
+                      a.color_dark(href='#')
+                        b Ut tellus dolor, dapibus eget, elementum vel
+                    p.f_size_medium.m_bottom_10.animate_ftr 25 January, 2013, 5 comments
+                    p.m_bottom_10.animate_ftr
+                      | Aliquam erat volutpat. Duis ac turpis. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna.
+                    a.tt_uppercase.f_size_large.animate_ftr(href='#') Read More
+                .clearfix
+                  // image
+                  a.d_block.photoframe.relative.shadow.wrapper.r_corners.f_left.m_right_20.animate_ftt.f_mxs_none.m_mxs_bottom_10(href='#')
+                    img.tr_all_long_hover(src='images/blog_img_2.jpg', alt='')
+                  // post content
+                  .mini_post_content
+                    h4.m_bottom_5.animate_ftr
+                      a.color_dark(href='#')
+                        b Cursus eleifend, elit aenean set amet lorem
+                    p.f_size_medium.m_bottom_10.animate_ftr 30 January, 2013, 6 comments
+                    p.m_bottom_10.animate_ftr
+                      | Aliquam erat volutpat. Duis ac turpis. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna.
+                    a.tt_uppercase.f_size_large.animate_ftr(href='#') Read More
+                .clearfix
+                  // image
+                  a.d_block.photoframe.relative.shadow.wrapper.r_corners.f_left.m_right_20.animate_ftt.f_mxs_none.m_mxs_bottom_10(href='#')
+                    img.tr_all_long_hover(src='images/blog_img_3.jpg', alt='')
+                  // post content
+                  .mini_post_content
+                    h4.m_bottom_5.animate_ftr
+                      a.color_dark(href='#')
+                        b In pede mi, aliquet sit ut tellus dolor
+                    p.f_size_medium.m_bottom_10.animate_ftr 1 February, 2013, 12 comments
+                    p.m_bottom_10.animate_ftr
+                      | Aliquam erat volutpat. Duis ac turpis. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna.
+                    a.tt_uppercase.f_size_large.animate_ftr(href='#') Read More
+            // testimonials
+            .col-lg-6.col-md-6.col-sm-12.ti_animate.animate_ftr
+              .clearfix.m_bottom_25.m_sm_bottom_20
+                h2.tt_uppercase.color_dark.f_left.f_mxs_none.m_mxs_bottom_15 What Our Customers Say
+                .f_right.clearfix.nav_buttons_wrap.f_mxs_none
+                  button.button_type_7.bg_cs_hover.box_s_none.f_size_ex_large.bg_light_color_1.f_left.tr_delay_hover.r_corners.ti_prev
+                    i.fa.fa-angle-left
+                  button.button_type_7.bg_cs_hover.box_s_none.f_size_ex_large.bg_light_color_1.f_left.m_left_5.tr_delay_hover.r_corners.ti_next
+                    i.fa.fa-angle-right
+              // testimonials carousel
+              .testiomials_carousel
+                div
+                  blockquote.r_corners.shadow.f_size_large.relative.m_bottom_15.animate_ftr
+                    | Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis.
+                  img.circle.m_left_20.d_inline_middle.animate_ftr(src='images/testimonial_img_1.jpg', alt='')
+                  .d_inline_middle.m_left_15.animate_ftr
+                    h5.color_dark
+                      b Marta Healy
+                    p Los Angeles
+                div
+                  blockquote.r_corners.shadow.f_size_large.relative.m_bottom_15
+                    | Integer rutrum ante eu lacus.Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque.
+                  img.circle.m_left_20.d_inline_middle(src='images/testimonial_img_2.jpg', alt='')
+                  .d_inline_middle.m_left_15
+                    h5.color_dark
+                      b Alan Smith
+                    p New York
+                div
+                  blockquote.r_corners.shadow.f_size_large.relative.m_bottom_15
+                    | Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec augue. Nam elit agna,endrerit sit amet, tincidunt.
+                  img.circle.m_left_20.d_inline_middle(src='images/testimonial_img_3.jpg', alt='')
+                  .d_inline_middle.m_left_15
+                    h5.color_dark
+                      b Anna Johnson
+                    p Detroid
+          // banners
+          .row.clearfix
+            .col-lg-4.col-md-4.col-sm-4
+              a.d_block.animate_ftb.h_md_auto.m_xs_bottom_15.banner_type_2.r_corners.red.t_align_c.tt_uppercase.vc_child.n_sm_vc_child(href='#')
+                span.d_inline_middle
+                  img.d_inline_middle.m_md_bottom_5(src='images/banner_img_3.png', alt='')
+                  span.d_inline_middle.m_left_10.t_align_l.d_md_block.t_md_align_c
+                    b 100% Satisfaction
+                    br
+                    span.color_dark Guaranteed
+            .col-lg-4.col-md-4.col-sm-4
+              a.d_block.animate_ftb.h_md_auto.m_xs_bottom_15.banner_type_2.r_corners.green.t_align_c.tt_uppercase.vc_child.n_sm_vc_child(href='#')
+                span.d_inline_middle
+                  img.d_inline_middle.m_md_bottom_5(src='images/banner_img_4.png', alt='')
+                  span.d_inline_middle.m_left_10.t_align_l.d_md_block.t_md_align_c
+                    b Free Shipping
+                    br
+                    span.color_dark On All Items
+            .col-lg-4.col-md-4.col-sm-4
+              a.d_block.animate_ftb.h_md_auto.banner_type_2.r_corners.orange.t_align_c.tt_uppercase.vc_child.n_sm_vc_child(href='#')
+                span.d_inline_middle
+                  img.d_inline_middle.m_md_bottom_5(src='images/banner_img_5.png', alt='')
+                  span.d_inline_middle.m_left_10.t_align_l.d_md_block.t_md_align_c
+                    b Great Daily Deals
+                    br
+                    span.color_dark Shop Now!
+      // markup footer
+      footer#footer
+        .footer_top_part
+          .container
+            .row.clearfix
+              .col-lg-3.col-md-3.col-sm-3.m_xs_bottom_30
+                h3.color_light_2.m_bottom_20 About
+                p.m_bottom_25
+                  | Ut pharetra augue nec augue. Nam elit agna, endrerit sit amet, tincidunt ac, viverra sed, nulla. Donec porta diam eu massa. Quisque diam lorem, interdum vitae, dapibus ac, scelerisque.
+                // social icons
+                ul.clearfix.horizontal_list.social_icons
+                  li.facebook.m_bottom_5.relative
+                    span.tooltip.tr_all_hover.r_corners.color_dark.f_size_small Facebook
+                    a.r_corners.t_align_c.tr_delay_hover.f_size_ex_large(href='#')
+                      i.fa.fa-facebook
+                  li.twitter.m_left_5.m_bottom_5.relative
+                    span.tooltip.tr_all_hover.r_corners.color_dark.f_size_small Twitter
+                    a.r_corners.f_size_ex_large.t_align_c.tr_delay_hover(href='#')
+                      i.fa.fa-twitter
+                  li.google_plus.m_left_5.m_bottom_5.relative
+                    span.tooltip.tr_all_hover.r_corners.color_dark.f_size_small Google Plus
+                    a.r_corners.f_size_ex_large.t_align_c.tr_delay_hover(href='#')
+                      i.fa.fa-google-plus
+                  li.rss.m_left_5.m_bottom_5.relative
+                    span.tooltip.tr_all_hover.r_corners.color_dark.f_size_small Rss
+                    a.r_corners.f_size_ex_large.t_align_c.tr_delay_hover(href='#')
+                      i.fa.fa-rss
+                  li.pinterest.m_left_5.m_bottom_5.relative
+                    span.tooltip.tr_all_hover.r_corners.color_dark.f_size_small Pinterest
+                    a.r_corners.f_size_ex_large.t_align_c.tr_delay_hover(href='#')
+                      i.fa.fa-pinterest
+                  li.instagram.m_left_5.m_bottom_5.relative
+                    span.tooltip.tr_all_hover.r_corners.color_dark.f_size_small Instagram
+                    a.r_corners.f_size_ex_large.t_align_c.tr_delay_hover(href='#')
+                      i.fa.fa-instagram
+                  li.linkedin.m_bottom_5.m_sm_left_5.relative
+                    span.tooltip.tr_all_hover.r_corners.color_dark.f_size_small LinkedIn
+                    a.r_corners.f_size_ex_large.t_align_c.tr_delay_hover(href='#')
+                      i.fa.fa-linkedin
+                  li.vimeo.m_left_5.m_bottom_5.relative
+                    span.tooltip.tr_all_hover.r_corners.color_dark.f_size_small Vimeo
+                    a.r_corners.f_size_ex_large.t_align_c.tr_delay_hover(href='#')
+                      i.fa.fa-vimeo-square
+                  li.youtube.m_left_5.m_bottom_5.relative
+                    span.tooltip.tr_all_hover.r_corners.color_dark.f_size_small Youtube
+                    a.r_corners.f_size_ex_large.t_align_c.tr_delay_hover(href='#')
+                      i.fa.fa-youtube-play
+                  li.flickr.m_left_5.m_bottom_5.relative
+                    span.tooltip.tr_all_hover.r_corners.color_dark.f_size_small Flickr
+                    a.r_corners.f_size_ex_large.t_align_c.tr_delay_hover(href='#')
+                      i.fa.fa-flickr
+                  li.envelope.m_left_5.m_bottom_5.relative
+                    span.tooltip.tr_all_hover.r_corners.color_dark.f_size_small Contact Us
+                    a.r_corners.f_size_ex_large.t_align_c.tr_delay_hover(href='#')
+                      i.fa.fa-envelope-o
+              .col-lg-3.col-md-3.col-sm-3.m_xs_bottom_30
+                h3.color_light_2.m_bottom_20 The Service
+                ul.vertical_list
+                  li
+                    a.color_light.tr_delay_hover(href='#')
+                      | My account
+                      i.fa.fa-angle-right
+                  li
+                    a.color_light.tr_delay_hover(href='#')
+                      | Order history
+                      i.fa.fa-angle-right
+                  li
+                    a.color_light.tr_delay_hover(href='#')
+                      | Wishlist
+                      i.fa.fa-angle-right
+                  li
+                    a.color_light.tr_delay_hover(href='#')
+                      | Vendor contact
+                      i.fa.fa-angle-right
+                  li
+                    a.color_light.tr_delay_hover(href='#')
+                      | Front page
+                      i.fa.fa-angle-right
+                  li
+                    a.color_light.tr_delay_hover(href='#')
+                      | Virtuemart categories
+                      i.fa.fa-angle-right
+              .col-lg-3.col-md-3.col-sm-3.m_xs_bottom_30
+                h3.color_light_2.m_bottom_20 Information
+                ul.vertical_list
+                  li
+                    a.color_light.tr_delay_hover(href='#')
+                      | About us
+                      i.fa.fa-angle-right
+                  li
+                    a.color_light.tr_delay_hover(href='#')
+                      | New collection
+                      i.fa.fa-angle-right
+                  li
+                    a.color_light.tr_delay_hover(href='#')
+                      | Best sellers
+                      i.fa.fa-angle-right
+                  li
+                    a.color_light.tr_delay_hover(href='#')
+                      | Manufacturers
+                      i.fa.fa-angle-right
+                  li
+                    a.color_light.tr_delay_hover(href='#')
+                      | Privacy policy
+                      i.fa.fa-angle-right
+                  li
+                    a.color_light.tr_delay_hover(href='#')
+                      | Terms & condition
+                      i.fa.fa-angle-right
+              .col-lg-3.col-md-3.col-sm-3
+                h3.color_light_2.m_bottom_20 Newsletter
+                p.f_size_medium.m_bottom_15
+                  | Sign up to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!
+                form#newsletter
+                  input.m_bottom_20.r_corners.f_size_medium.full_width(type='email', placeholder='Your email address', name='newsletter-email')
+                  button.button_type_8.r_corners.bg_scheme_color.color_light.tr_all_hover(type='submit') Subscribe
+        // copyright part
+        .footer_bottom_part
+          .container.clearfix.t_mxs_align_c
+            p.f_left.f_mxs_none.m_mxs_bottom_10
+              | © 2014 
+              span.color_light Flatastic
+              | . All Rights Reserved.
+            ul.f_right.horizontal_list.clearfix.f_mxs_none.d_mxs_inline_b
+              li
+                img(src='images/payment_img_1.png', alt='')
+              li.m_left_5
+                img(src='images/payment_img_2.png', alt='')
+              li.m_left_5
+                img(src='images/payment_img_3.png', alt='')
+              li.m_left_5
+                img(src='images/payment_img_4.png', alt='')
+              li.m_left_5
+                img(src='images/payment_img_5.png', alt='')
+    // social widgets
+    ul.social_widgets.d_xs_none
+      // facebook
+      li.relative
+        button.sw_button.t_align_c.facebook
+          i.fa.fa-facebook
+        .sw_content
+          h3.color_dark.m_bottom_20 Join Us on Facebook
+          iframe(src='http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fenvato&width=235&height=258&colorscheme=light&show_faces=true&header=false&stream=false&show_border=false&appId=438889712801266', style='border:none; overflow:hidden; width:235px; height:258px;')
+      // twitter feed
+      li.relative
+        button.sw_button.t_align_c.twitter
+          i.fa.fa-twitter
+        .sw_content
+          h3.color_dark.m_bottom_20 Latest Tweets
+          .twitterfeed.m_bottom_25
+          a.button_type_4.d_inline_b.r_corners.tr_all_hover.color_light.tw_color(role='button', href='https://twitter.com/fanfbmltemplate') Follow on Twitter
+      // contact form
+      li.relative
+        button.sw_button.t_align_c.contact
+          i.fa.fa-envelope-o
+        .sw_content
+          h3.color_dark.m_bottom_20 Contact Us
+          p.f_size_medium.m_bottom_15 Lorem ipsum dolor sit amet, consectetuer adipis mauris
+          form#contactform.mini
+            input.f_size_medium.m_bottom_10.r_corners.full_width(type='text', name='cf_name', placeholder='Your name')
+            input.f_size_medium.m_bottom_10.r_corners.full_width(type='email', name='cf_email', placeholder='Email')
+            textarea.f_size_medium.r_corners.full_width.m_bottom_20(placeholder='Message', name='cf_message')
+            button.button_type_4.r_corners.mw_0.tr_all_hover.color_dark.bg_light_color_2(type='submit') Send
+      // contact info
+      li.relative
+        button.sw_button.t_align_c.googlemap
+          i.fa.fa-map-marker
+        .sw_content
+          h3.color_dark.m_bottom_20 Store Location
+          ul.c_info_list
+            li.m_bottom_10
+              .clearfix.m_bottom_15
+                i.fa.fa-map-marker.f_left.color_dark
+                p.contact_e
+                  | 8901 Marmora Road,
+                  br
+                  |  Glasgow, D04 89GR.
+              iframe#gmap_mini.r_corners.full_width(src='https://maps.google.com/maps?f=q&source=s_q&hl=ru&geocode=&q=Manhattan,+New+York,+NY,+United+States&aq=0&oq=monheten&sll=37.0625,-95.677068&sspn=65.430355,129.814453&t=m&ie=UTF8&hq=&hnear=%D0%9C%D0%B0%D0%BD%D1%85%D1%8D%D1%82%D1%82%D0%B5%D0%BD,+%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA,+%D0%9D%D1%8C%D1%8E+%D0%99%D0%BE%D1%80%D0%BA,+%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA&ll=40.790278,-73.959722&spn=0.015612,0.031693&z=13&output=embed')
+            li.m_bottom_10
+              .clearfix.m_bottom_10
+                i.fa.fa-phone.f_left.color_dark
+                p.contact_e 800-559-65-80
+            li.m_bottom_10
+              .clearfix.m_bottom_10
+                i.fa.fa-envelope.f_left.color_dark
+                a.contact_e.default_t_color(href='mailto:#') info@companyname.com
+            li
+              .clearfix
+                i.fa.fa-clock-o.f_left.color_dark
+                p.contact_e
+                  | Monday - Friday: 08.00-20.00 
+                  br
+                  | Saturday: 09.00-15.00
+                  br
+                  |  Sunday: closed
+    // login popup
+    #login_popup.popup_wrap.d_none
+      section.popup.r_corners.shadow
+        button.bg_tr.color_dark.tr_all_hover.text_cs_hover.close.f_size_large
+          i.fa.fa-times
+        h3.m_bottom_20.color_dark Log In
+        form
+          ul
+            li.m_bottom_15
+              label.m_bottom_5.d_inline_b(for='username') Username
+              br
+              input#username.r_corners.full_width(type='text', name='')
+            li.m_bottom_25
+              label.m_bottom_5.d_inline_b(for='password') Password
+              br
+              input#password.r_corners.full_width(type='password', name='')
+            li.m_bottom_15
+              input#checkbox_10.d_none(type='checkbox')
+              label(for='checkbox_10') Remember me
+            li.clearfix.m_bottom_30
+              button.button_type_4.tr_all_hover.r_corners.f_left.bg_scheme_color.color_light.f_mxs_none.m_mxs_bottom_15 Log In
+              .f_right.f_size_medium.f_mxs_none
+                a.color_dark(href='#') Forgot your password?
+                br
+                a.color_dark(href='#') Forgot your username?
+        footer.bg_light_color_1.t_mxs_align_c
+          h3.color_dark.d_inline_middle.d_mxs_block.m_mxs_bottom_15 New Customer?
+          a.tr_all_hover.r_corners.button_type_4.bg_dark_color.bg_cs_hover.color_light.d_inline_middle.m_mxs_left_0(href='#', role='button') Create an Account
+    // custom popup
+    #quick_view_product.popup_wrap.d_none
+      section.popup.r_corners.shadow
+        button.bg_tr.color_dark.tr_all_hover.text_cs_hover.close.f_size_large
+          i.fa.fa-times
+        .clearfix
+          .custom_scrollbar
+            // left popup column
+            .f_left.half_column
+              .relative.d_inline_b.m_bottom_10.qv_preview
+                span.hot_stripe
+                  img(src='images/sale_product.png', alt='')
+                img.tr_all_hover(src='images/quick_view_img_1.jpg', alt='')
+              // carousel
+              .relative.qv_carousel_wrap.m_bottom_20
+                button.button_type_11.t_align_c.f_size_ex_large.bg_cs_hover.r_corners.d_inline_middle.bg_tr.tr_all_hover.qv_btn_prev
+                  i.fa.fa-angle-left
+                ul.qv_carousel.d_inline_middle
+                  li(data-src='images/quick_view_img_1.jpg')
+                    img(src='images/quick_view_img_4.jpg', alt='')
+                  li(data-src='images/quick_view_img_2.jpg')
+                    img(src='images/quick_view_img_5.jpg', alt='')
+                  li(data-src='images/quick_view_img_3.jpg')
+                    img(src='images/quick_view_img_6.jpg', alt='')
+                  li(data-src='images/quick_view_img_1.jpg')
+                    img(src='images/quick_view_img_4.jpg', alt='')
+                  li(data-src='images/quick_view_img_2.jpg')
+                    img(src='images/quick_view_img_5.jpg', alt='')
+                  li(data-src='images/quick_view_img_3.jpg')
+                    img(src='images/quick_view_img_6.jpg', alt='')
+                button.button_type_11.t_align_c.f_size_ex_large.bg_cs_hover.r_corners.d_inline_middle.bg_tr.tr_all_hover.qv_btn_next
+                  i.fa.fa-angle-right
+              .d_inline_middle Share this:
+              .d_inline_middle.m_left_5
+                // AddThis Button BEGIN
+                .addthis_toolbox.addthis_default_style.addthis_32x32_style
+                  a.addthis_button_preferred_1
+                  a.addthis_button_preferred_2
+                  a.addthis_button_preferred_3
+                  a.addthis_button_preferred_4
+                  a.addthis_button_compact
+                  a.addthis_counter.addthis_bubble_style
+                // AddThis Button END
+            // right popup column
+            .f_right.half_column
+              // description
+              h2.m_bottom_10
+                a.color_dark.fw_medium(href='#') Eget elementum vel
+              .m_bottom_10
+                // rating
+                ul.horizontal_list.d_inline_middle.type_2.clearfix.rating_list.tr_all_hover
+                  li.active
+                    i.fa.fa-star-o.empty.tr_all_hover
+                    i.fa.fa-star.active.tr_all_hover
+                  li.active
+                    i.fa.fa-star-o.empty.tr_all_hover
+                    i.fa.fa-star.active.tr_all_hover
+                  li.active
+                    i.fa.fa-star-o.empty.tr_all_hover
+                    i.fa.fa-star.active.tr_all_hover
+                  li.active
+                    i.fa.fa-star-o.empty.tr_all_hover
+                    i.fa.fa-star.active.tr_all_hover
+                  li
+                    i.fa.fa-star-o.empty.tr_all_hover
+                    i.fa.fa-star.active.tr_all_hover
+                a.d_inline_middle.default_t_color.f_size_small.m_left_5(href='#') 1 Review(s) 
+              hr.m_bottom_10.divider_type_3
+              table.description_table.m_bottom_10
+                tr
+                  td Manufacturer:
+                  td
+                    a.color_dark(href='#') Chanel
+                tr
+                  td Availability:
+                  td
+                    span.color_green in stock
+                    |  20 item(s)
+                tr
+                  td Product Code:
+                  td PS06
+              h5.fw_medium.m_bottom_10 Product Dimensions and Weight
+              table.description_table.m_bottom_5
+                tr
+                  td Product Length:
+                  td
+                    span.color_dark 10.0000M
+                tr
+                  td Product Weight:
+                  td 10.0000KG
+              hr.divider_type_3.m_bottom_10
+              p.m_bottom_10
+                | Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Donec sit amet eros. Lorem ipsum dolor sit amet, consecvtetuer adipiscing elit.
+              hr.divider_type_3.m_bottom_15
+              .m_bottom_15
+                s.v_align_b.f_size_ex_large $152.00
+                span.v_align_b.f_size_big.m_left_5.scheme_color.fw_medium $102.00
+              table.description_table.type_2.m_bottom_15
+                tr
+                  td.v_align_m Size:
+                  td.v_align_m
+                    .custom_select.f_size_medium.relative.d_inline_middle
+                      .select_title.r_corners.relative.color_dark s
+                      ul.select_list.d_none
+                      select(name='product_name')
+                        option(value='s') s
+                        option(value='m') m
+                        option(value='l') l
+                tr
+                  td.v_align_m Quantity:
+                  td.v_align_m
+                    .clearfix.quantity.r_corners.d_inline_middle.f_size_medium.color_dark
+                      button.bg_tr.d_block.f_left(data-direction='down') -
+                      input.f_left(type='text', name='', readonly='', value='1')
+                      button.bg_tr.d_block.f_left(data-direction='up') +
+              .clearfix.m_bottom_15
+                button.button_type_12.r_corners.bg_scheme_color.color_light.tr_delay_hover.f_left.f_size_large Add to Cart
+                button.button_type_12.bg_light_color_2.tr_delay_hover.f_left.r_corners.color_dark.m_left_5.p_hr_0
+                  i.fa.fa-heart-o.f_size_big
+                  span.tooltip.tr_all_hover.r_corners.color_dark.f_size_small Wishlist
+                button.button_type_12.bg_light_color_2.tr_delay_hover.f_left.r_corners.color_dark.m_left_5.p_hr_0
+                  i.fa.fa-files-o.f_size_big
+                  span.tooltip.tr_all_hover.r_corners.color_dark.f_size_small Compare
+                button.button_type_12.bg_light_color_2.tr_delay_hover.f_left.r_corners.color_dark.m_left_5.p_hr_0.relative
+                  i.fa.fa-question-circle.f_size_big
+                  span.tooltip.tr_all_hover.r_corners.color_dark.f_size_small Ask a Question
+    button#go_to_top.t_align_c.r_corners.tr_all_hover.animate_ftl
+      i.fa.fa-angle-up
+    // scripts include
+    script(src='/js/jquery-2.1.0.min.js')
+    script(src='/js/jquery-migrate-1.2.1.min.js')
+    script(src='/js/retina.js')
+    script(src='/js/camera.min.js')
+    script(src='/js/jquery.easing.1.3.js')
+    script(src='/js/waypoints.min.js')
+    script(src='/js/jquery.isotope.min.js')
+    script(src='/js/owl.carousel.min.js')
+    script(src='/js/jquery.tweet.min.js')
+    script(src='/js/jquery.custom-scrollbar.js')
+    script(src='/js/scripts.js')
+    //script(type='text/javascript', src='http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-5306f8f674bfda4c')

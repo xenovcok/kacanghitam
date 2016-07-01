@@ -1,0 +1,54 @@
+extends ../master-layout.pug
+
+block header
+ script(type='text/javascript', src='/assets/js/plugins/tables/datatables/datatables.min.js')
+ script(type='text/javascript', src='/assets/js/pages/datatables_basic.js')
+ script(type='text/javascript', src='/assets/js/plugins/notifications/pnotify.min.js')
+ script(type='text/javascript', src='/ assets/js/pages/components_notifications_pnotify.js')
+ 
+
+block content
+ .panel.panel-flat
+  .panel-heading
+    h5.panel-title Daftar Postingan
+    .heading-elements
+      ul.icons-list
+        li
+          a(data-action='collapse')
+        li
+          a(data-action='reload')
+        li
+          a(data-action='close')
+  .panel-body
+    | Post as Beautiful as your Mind. 
+  table.table.datatable-basic
+    thead
+      tr
+        th Title
+        th Content
+        th Published
+        th.text-center Actions
+    tbody
+      each item in data
+        tr
+          td #{item.title}
+          td #{item.article}
+          td #{item.date_published}
+          td.text-center
+            ul.icons-list
+              li.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                  i.icon-menu9
+                ul.dropdown-menu.dropdown-menu-right
+                  li
+                    a(href='#')
+                      i.icon-pencil7
+                      |  Edit
+                  li
+                    a(href='#')
+                      i.icon-eraser
+                      |  Hapus
+
+
+
+        

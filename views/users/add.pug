@@ -1,0 +1,125 @@
+extends ../master-layout.pug
+
+block content
+ .col-md-12
+      // Add New Member
+      form.form-horizontal(action='#')
+        .panel.panel-flat
+          .panel-heading
+            h5.panel-title Basic Information
+            .heading-elements
+              ul.icons-list
+                li
+                  a(data-action='collapse')
+                li
+                  a(data-action='reload')
+                li
+                  a(data-action='close')
+            a.heading-elements-toggle
+              i.icon-menu
+          .panel-body
+            fieldset
+              legend.text-semibold Enter your information
+              .form-group
+                label.col-lg-3.control-label Enter your name:
+                .col-lg-9
+                  input.form-control(type='text', placeholder='Ex : Andy Law')
+              .form-group
+                label.col-lg-3.control-label Enter your password:
+                .col-lg-9
+                  input.form-control(type='password', placeholder='Your strong password')
+              .form-group
+                label.col-lg-3.control-label Repeat password:
+                .col-lg-9
+                  input.form-control(type='password', placeholder='Repeat password')
+            fieldset
+              legend.text-semibold Add personal details
+              .form-group
+                label.col-lg-3.control-label Your country:
+                .col-lg-9
+                  #s2id_autogen9.select2-container.select
+                    a.select2-choice(href='javascript:void(0)', tabindex='-1')
+                      span#select2-chosen-10.select2-chosen USA
+                      abbr.select2-search-choice-close
+                      span.select2-arrow(role='presentation')
+                        b(role='presentation')
+                    label.select2-offscreen(for='s2id_autogen10')
+                    input#s2id_autogen10.select2-focusser.select2-offscreen(type='text', aria-haspopup='true', role='button', aria-labelledby='select2-chosen-10')
+                    .select2-drop.select2-display-none.select2-with-searchbox
+                      .select2-search
+                        label.select2-offscreen(for='s2id_autogen10_search')
+                        input#s2id_autogen10_search.select2-input(type='text', autocomplete='off', autocorrect='off', autocapitalize='off', spellcheck='false', role='combobox', aria-expanded='true', aria-autocomplete='list', aria-owns='select2-results-10', placeholder='')
+                      ul#select2-results-10.select2-results(role='listbox')    
+                  select.select.select2-offscreen(data-placeholder='Select your country', tabindex='-1', title='')
+                    option(value='USA') USA
+                    option(value='United Kingdom') United Kingdom
+                    option(value='...') ...
+                    option(value='Australia') Australia
+              .form-group
+                label.col-lg-3.control-label Select your state:
+                .col-lg-9
+                  #s2id_autogen11.select2-container.select
+                    a.select2-choice.select2-default(href='javascript:void(0)', tabindex='-1')
+                      span#select2-chosen-12.select2-chosen Select your state
+                      abbr.select2-search-choice-close
+                      span.select2-arrow(role='presentation')
+                        b(role='presentation')
+                    label.select2-offscreen(for='s2id_autogen12')
+                    input#s2id_autogen12.select2-focusser.select2-offscreen(type='text', aria-haspopup='true', role='button', aria-labelledby='select2-chosen-12')
+                    .select2-drop.select2-display-none.select2-with-searchbox
+                      .select2-search
+                        label.select2-offscreen(for='s2id_autogen12_search')
+                        input#s2id_autogen12_search.select2-input(type='text', autocomplete='off', autocorrect='off', autocapitalize='off', spellcheck='false', role='combobox', aria-expanded='true', aria-autocomplete='list', aria-owns='select2-results-12', placeholder='')
+                      ul#select2-results-12.select2-results(role='listbox')    
+                  select.select.select2-offscreen(data-placeholder='Select your state', tabindex='-1', title='')
+                    option
+                    optgroup(label='Alaskan/Hawaiian Time Zone')
+                      option(value='AK') Alaska
+                      option(value='HI') Hawaii
+                    optgroup(label='Pacific Time Zone')
+                      option(value='CA') California
+                      option(value='NV') Nevada
+                      option(value='WA') Washington
+                    optgroup(label='Mountain Time Zone')
+                      option(value='AZ') Arizona
+                      option(value='CO') Colorado
+                      option(value='WY') Wyoming
+                    optgroup(label='Central Time Zone')
+                      option(value='AL') Alabama
+                      option(value='AR') Arkansas
+                      option(value='KY') Kentucky
+                    optgroup(label='Eastern Time Zone')
+                      option(value='CT') Connecticut
+                      option(value='DE') Delaware
+                      option(value='FL') Florida
+              .form-group
+                label.col-lg-3.control-label Gender:
+                .col-lg-9
+                  label.radio-inline
+                    .choice
+                      span.checked
+                        input.styled(type='radio', name='gender2', checked='checked')
+                    | 							Male
+                  label.radio-inline
+                    .choice
+                      span
+                        input.styled(type='radio', name='gender2')
+                    | 							Female
+              .form-group
+                label.col-lg-3.control-label Your CV:
+                .col-lg-9
+                  .uploader.bg-warning
+                    input.file-styled(type='file')
+                    span.filename(style='-webkit-user-select: none;') No file selected
+                    span.action(style='-webkit-user-select: none;')
+                      i.icon-googleplus5
+                  span.help-block Accepted formats: pdf, doc. Max file size 2Mb
+              .form-group
+                label.col-lg-3.control-label About yourself:
+                .col-lg-9
+                  textarea.form-control(rows='5', cols='5', placeholder='Few words about yourself...')
+            .text-right
+              button.btn.btn-primary(type='submit')
+                | Submit form 
+                i.icon-arrow-right14.position-right
+      // /basic legend

@@ -1,0 +1,278 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Limitless - Responsive Web Application Kit by Eugene Kopyov
+    // Global stylesheets
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900', rel='stylesheet', type='text/css')
+    link(href='/assets/css/icons/icomoon/styles.css', rel='stylesheet', type='text/css')
+    link(href='/assets/css/minified/bootstrap.min.css', rel='stylesheet', type='text/css')
+    link(href='/assets/css/minified/core.min.css', rel='stylesheet', type='text/css')
+    link(href='/assets/css/minified/components.min.css', rel='stylesheet', type='text/css')
+    link(href='/assets/css/minified/colors.min.css', rel='stylesheet', type='text/css')
+    // /global stylesheets
+    // Core JS files
+    script(type='text/javascript', src='/assets/js/plugins/loaders/pace.min.js')
+    script(type='text/javascript', src='/assets/js/core/libraries/jquery.min.js')
+    script(type='text/javascript', src='/assets/js/core/libraries/bootstrap.min.js')
+    script(type='text/javascript', src='/assets/js/plugins/loaders/blockui.min.js')
+    // /core JS files
+    // Theme JS files
+    script(type='text/javascript', src='/assets/js/core/app.js')
+    // /theme JS files
+  body
+    // Main navbar
+    .navbar.navbar-inverse
+      .navbar-header
+        a.navbar-brand(href='index.html')
+          img(src='/assets/images/logo_light.png', alt='')
+        ul.nav.navbar-nav.pull-right.visible-xs-block
+          li
+            a(data-toggle='collapse', data-target='#navbar-mobile')
+              i.icon-tree5
+      #navbar-mobile.navbar-collapse.collapse
+        ul.nav.navbar-nav
+          li.dropdown
+            a.dropdown-toggle(href='#', data-toggle='dropdown')
+              i.icon-git-compare
+              span.visible-xs-inline-block.position-right Git updates
+              span.badge.bg-warning-400 9
+            .dropdown-menu.dropdown-content
+              .dropdown-content-heading
+                | Git updates
+                ul.icons-list
+                  li
+                    a(href='#')
+                      i.icon-sync
+              ul.media-list.dropdown-content-body.width-350
+                li.media
+                  .media-left
+                    a.btn.border-primary.text-primary.btn-flat.btn-rounded.btn-icon.btn-sm(href='#')
+                      i.icon-git-pull-request
+                  .media-body
+                    | Drop the IE 
+                    a(href='#') specific hacks
+                    |  for temporal inputs
+                    .media-annotation 4 minutes ago
+                li.media
+                  .media-left
+                    a.btn.border-warning.text-warning.btn-flat.btn-rounded.btn-icon.btn-sm(href='#')
+                      i.icon-git-commit
+                  .media-body
+                    | Add full font overrides for popovers and tooltips
+                    .media-annotation 36 minutes ago
+                li.media
+                  .media-left
+                    a.btn.border-info.text-info.btn-flat.btn-rounded.btn-icon.btn-sm(href='#')
+                      i.icon-git-branch
+                  .media-body
+                    a(href='#') Chris Arney
+                    |  created a new 
+                    span.text-semibold Design
+                    |  branch
+                    .media-annotation 2 hours ago
+                li.media
+                  .media-left
+                    a.btn.border-success.text-success.btn-flat.btn-rounded.btn-icon.btn-sm(href='#')
+                      i.icon-git-merge
+                  .media-body
+                    a(href='#') Eugene Kopyov
+                    |  merged 
+                    span.text-semibold Master
+                    |  and 
+                    span.text-semibold Dev
+                    |  branches
+                    .media-annotation Dec 18, 18:36
+                li.media
+                  .media-left
+                    a.btn.border-primary.text-primary.btn-flat.btn-rounded.btn-icon.btn-sm(href='#')
+                      i.icon-git-pull-request
+                  .media-body
+                    | Have Carousel ignore keyboard events
+                    .media-annotation Dec 12, 05:46
+              .dropdown-content-footer
+                a(href='#', data-popup='tooltip', title='All activity')
+                  i.icon-menu.display-block
+        ul.nav.navbar-nav.navbar-right
+          li.dropdown
+            a.dropdown-toggle(href='#', data-toggle='dropdown')
+              i.icon-people
+              span.visible-xs-inline-block.position-right Users
+            .dropdown-menu.dropdown-content
+              .dropdown-content-heading
+                | Users online
+                ul.icons-list
+                  li
+                    a(href='#')
+                      i.icon-gear
+              ul.media-list.dropdown-content-body.width-300
+                li.media
+                  .media-left
+                    img.img-circle.img-sm(src='/assets/images/placeholder.jpg', alt='')
+                  .media-body
+                    a.media-heading.text-semibold(href='#') Jordana Ansley
+                    span.display-block.text-muted.text-size-small Lead web developer
+                  .media-right.media-middle
+                    span.status-mark.border-success
+                li.media
+                  .media-left
+                    img.img-circle.img-sm(src='/assets/images/placeholder.jpg', alt='')
+                  .media-body
+                    a.media-heading.text-semibold(href='#') Will Brason
+                    span.display-block.text-muted.text-size-small Marketing manager
+                  .media-right.media-middle
+                    span.status-mark.border-danger
+                li.media
+                  .media-left
+                    img.img-circle.img-sm(src='/assets/images/placeholder.jpg', alt='')
+                  .media-body
+                    a.media-heading.text-semibold(href='#') Hanna Walden
+                    span.display-block.text-muted.text-size-small Project manager
+                  .media-right.media-middle
+                    span.status-mark.border-success
+                li.media
+                  .media-left
+                    img.img-circle.img-sm(src='/assets/images/placeholder.jpg', alt='')
+                  .media-body
+                    a.media-heading.text-semibold(href='#') Dori Laperriere
+                    span.display-block.text-muted.text-size-small Business developer
+                  .media-right.media-middle
+                    span.status-mark.border-warning-300
+                li.media
+                  .media-left
+                    img.img-circle.img-sm(src='/assets/images/placeholder.jpg', alt='')
+                  .media-body
+                    a.media-heading.text-semibold(href='#') Vanessa Aurelius
+                    span.display-block.text-muted.text-size-small UX expert
+                  .media-right.media-middle
+                    span.status-mark.border-grey-400
+              .dropdown-content-footer
+                a(href='#', data-popup='tooltip', title='All users')
+                  i.icon-menu.display-block
+          li.dropdown
+            a.dropdown-toggle(href='#', data-toggle='dropdown')
+              i.icon-bubbles4
+              span.visible-xs-inline-block.position-right Messages
+              span.badge.bg-warning-400 2
+            .dropdown-menu.dropdown-content.width-350
+              .dropdown-content-heading
+                | Messages
+                ul.icons-list
+                  li
+                    a(href='#')
+                      i.icon-compose
+              ul.media-list.dropdown-content-body
+                li.media
+                  .media-left
+                    img.img-circle.img-sm(src='/assets/images/placeholder.jpg', alt='')
+                    span.badge.bg-danger-400.media-badge 5
+                  .media-body
+                    a.media-heading(href='#')
+                      span.text-semibold James Alexander
+                      span.media-annotation.pull-right 04:58
+                    span.text-muted who knows, maybe that would be the best thing for me...
+                li.media
+                  .media-left
+                    img.img-circle.img-sm(src='/assets/images/placeholder.jpg', alt='')
+                    span.badge.bg-danger-400.media-badge 4
+                  .media-body
+                    a.media-heading(href='#')
+                      span.text-semibold Margo Baker
+                      span.media-annotation.pull-right 12:16
+                    span.text-muted That was something he was unable to do because...
+                li.media
+                  .media-left
+                    img.img-circle.img-sm(src='/assets/images/placeholder.jpg', alt='')
+                  .media-body
+                    a.media-heading(href='#')
+                      span.text-semibold Jeremy Victorino
+                      span.media-annotation.pull-right 22:48
+                    span.text-muted But that would be extremely strained and suspicious...
+                li.media
+                  .media-left
+                    img.img-circle.img-sm(src='/assets/images/placeholder.jpg', alt='')
+                  .media-body
+                    a.media-heading(href='#')
+                      span.text-semibold Beatrix Diaz
+                      span.media-annotation.pull-right Tue
+                    span.text-muted What a strenuous career it is that I've chosen...
+                li.media
+                  .media-left
+                    img.img-circle.img-sm(src='/assets/images/placeholder.jpg', alt='')
+                  .media-body
+                    a.media-heading(href='#')
+                      span.text-semibold Richard Vango
+                      span.media-annotation.pull-right Mon
+                    span.text-muted Other travelling salesmen live a life of luxury...
+              .dropdown-content-footer
+                a(href='#', data-popup='tooltip', title='All messages')
+                  i.icon-menu.display-block
+          li.dropdown.dropdown-user
+            a.dropdown-toggle(data-toggle='dropdown')
+              img(src='/assets/images/placeholder.jpg', alt='')
+              span Victoria
+              i.caret
+            ul.dropdown-menu.dropdown-menu-right
+              li
+                a(href='#')
+                  i.icon-user-plus
+                  |  My profile
+              li
+                a(href='#')
+                  i.icon-coins
+                  |  My balance
+              li
+                a(href='#')
+                  span.badge.badge-warning.pull-right 58
+                  i.icon-comment-discussion
+                  |  Messages
+              li.divider
+              li
+                a(href='#')
+                  i.icon-cog5
+                  |  Account settings
+              li
+                a(href='#')
+                  i.icon-switch2
+                  |  Logout
+    // /main navbar
+    // Page container
+    .page-container.login-container
+      // Page content
+      .page-content
+        // Main content
+        .content-wrapper
+          // Error wrapper
+          .container-fluid.text-center
+            h1.error-title 404
+            h6.text-semibold.content-group Oops, an error has occurred. Page not found!
+            .row
+              .col-lg-4.col-lg-offset-4.col-sm-6.col-sm-offset-3
+                form.main-search(action='#')
+                  .input-group.content-group
+                    input.form-control.input-lg(type='text', placeholder='Search')
+                    .input-group-btn
+                      button.btn.bg-slate-600.btn-icon.btn-lg(type='submit')
+                        i.icon-search4
+                  .row
+                    .col-sm-6
+                      a.btn.btn-primary.btn-block.content-group(href='#')
+                        i.icon-circle-left2.position-left
+                        |  Go to dashboard
+                    .col-sm-6
+                      a.btn.btn-default.btn-block.content-group(href='#')
+                        i.icon-menu7.position-left
+                        |  Advanced search
+          // /error wrapper
+        // /main content
+      // /page content
+      // Footer
+      .footer.text-muted
+        | © 2015. 
+        a(href='#') Limitless Web App Kit
+        |  by 
+        a(href='http://themeforest.net/user/Kopyov', target='_blank') Eugene Kopyov
+      // /footer
+    // /page container

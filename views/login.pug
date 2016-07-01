@@ -1,0 +1,35 @@
+html
+head
+link(href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css', rel='stylesheet')
+title= title
+body(style='background:#eee')
+div.container(style='width:20%;padding-top:10%') 
+ div.page-header.text-center 
+  h1 Login Form
+ form.login-form.form-horizontal.form-signin(method='post', action='/authenticate' role='form')
+  div.form-group
+   label.col-sm-4 Username
+   div.col-sm-8
+    input.form-control(
+    placeholder='Your User Name',
+    required=true,
+    name='username',
+    id='username',
+    type='text',
+    value=userName)
+  div.form-group
+   label.col-sm-4 Password
+   div.col-sm-8
+    input.form-control(placeholder='Your Password',
+    required=true,
+    name='pass',
+    id='pass',
+    type='password',
+    value=pass)
+  div.form-group
+    input.btn.btn-lg.btn-block.btn-primary(
+    type='submit',
+    value='Login')
+
+
+

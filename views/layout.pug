@@ -1,0 +1,42 @@
+html
+	head
+		title Admin Page
+		link(href='/css/bootstrap.min.css')
+		link(href='/custom.css', rel='stylesheet')
+		link(href='/font-awesome.min.css', rel='stylesheet')
+	body
+		div.nav-side-menu
+			div.brand Brand Logo
+			i.fa.fa-bars.fa-2x.toggle-btn(data-toggle='collapse', data-target='#menu-contet')
+			div.menu-list
+				ul.menu-content.collapse.out(id='menu-content')
+					li
+						a(href='#')
+							i.fa.fa-dashboard.fa-lg Dashboard
+					li.collapsed.active(data-toggle='collapse', data-target='#products')
+						a(href='#')
+							i.fa.fa-gift.fa-lg UI Element
+							span.arrow
+					ul.sub-menu.collapse(id='products')
+						li.active
+							a(href='#') CSS3 Animation
+						li
+							a(href='#') General
+						li
+							a(href='#') Button
+						li
+							a(href='#') Tabs 
+					li.collapsed(data-toggle='collapse', data-target='#service')
+						a(href='#')
+							i.fa.fa-globe.fa-lg Services 
+							span.arrow
+					li 
+						ul.sub-menu.collapse(id='service')
+							li New Service 1
+							li New Service 2
+							li New Service 3
+	script(src='/js/jquery.min.js')
+	script(src='/js/bootstrap.min.js')
+
+
+
